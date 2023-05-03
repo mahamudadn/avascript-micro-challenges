@@ -38,3 +38,26 @@ console.log(compareNumbers(2,7));
 // first is equal to  second
 console.log(compareNumbers(7,7));
 
+
+// craete a function that will take an array
+
+function sumOfFirstNLast(array){
+    if(array.length < 2) {
+        return null;// incase the array is less than two value
+    }
+    else {
+        return array[0] + array[array.length - 1];
+    }
+
+}
+// addad my first array1
+let array1 = [1, 2, 3, 4, 5]
+let sum = sumOfFirstNLast(array1);
+console.log('sum of first and last is ' , sum);
+// addad my first array2
+let array2 = [6, 7, 8, 9, 10, 11, 12]
+sum = sumOfFirstNLast(array2);
+console.log('sum of first and last is ' ,sum);
+
+
+
